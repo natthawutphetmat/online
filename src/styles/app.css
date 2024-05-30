@@ -1,0 +1,29 @@
+header {
+    height: 900px;
+    position: relative;
+    text-align: center;
+}
+
+.box {
+    top: 0;
+    height: 900px;
+    position: absolute;
+    max-width: 400px;
+    overflow: auto;
+    cursor: default;
+    margin: auto;
+    left: 40%;
+
+}
+
+.box img {
+    width: 100%;
+
+
+}
+
+@media screen and (max-width:480px ) {
+    .box {
+        left: 0;
+    }
+}
