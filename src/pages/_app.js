@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   const [clients, setClients] = useState([]);
 
   useEffect(() => {
-    const socket = new WebSocket('ws://localhost:3001');
+    const socket = new WebSocket('ws://localhost:4000');
 
     socket.onmessage = (event) => {
       const data = JSON.parse(event.data);
